@@ -1,0 +1,483 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Prata', serif; */
+    top: 0px !important; 
+    height: 100%;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    } 
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #FBCC0A;
+}
+/* Logo */
+
+.logo {
+    text-align: left;
+    display: block;
+    margin-left: 40px;
+}
+
+#upperLogo {
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Parisienne', cursive;
+    /* font-family: 'Cookie', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: #FBCC0A;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 45px;
+}
+
+#underLogo {
+    /* font-family: 'Bitter', serif; */
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Martel', serif; */
+    /* font-family: 'Rufina', serif; */
+    /* font-family: 'Playball', cursive; */
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    margin-top: 0px
+}
+
+/* Nav Bar */
+
+.navList h1 {
+    margin: 0 0 0 75px;
+}
+
+.links {
+    padding: 5px 25px;
+    position: relative;
+    bottom: 90px;
+    float: right;
+    border-right:solid 1px black;
+    font-family: 'Prata', serif;
+}
+
+#contactNav {
+    border: none;
+}
+
+.navList {
+    list-style-type: none;
+    border-bottom: black solid;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1000;
+    margin: 0;
+    height: 125px;
+}
+
+.navList li {
+    display: inline;
+}
+
+#contactNav {
+    margin-right: 30px;    
+}
+
+/* Home Page */
+
+.homePage {
+    background-image: url("./images/homePageBackground1-min.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 158px;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.headerDiv {
+    width: 50%;
+}
+
+.homePage h1 {
+    padding-top: 20%;
+    font-size: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Pop-Up */
+
+.modal {
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color:#f4f4f4;
+  margin: 15% auto;
+  width: 40%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:modalopen;
+  animation-duration:1s;
+}
+
+.modal-header h2, .modal-footer h3 {
+  margin:0;
+}
+
+.modal-header {
+  background-image: url("./images/donationPopUp-min.jpg");
+  padding:15px;
+  color:#fff;
+  height: 225px;
+  background-size: 100% 100%;
+}
+
+.modal-body {
+  padding:10px 20px;
+  height: 150px;
+  overflow: scroll;
+}
+
+.modal-footer {
+  background:#FBCC0A;
+  padding:10px;
+  color:#fff;
+  text-align: center;
+}
+
+.closeBtn {
+  color:black;
+  float: right;
+  font-size:30px;
+}
+
+.closeBtn:hover,.closeBtn:focus {
+  color:#FBCC0A;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+@keyframes modalopen {
+  from{ opacity: 0}
+  to {opacity: 1}
+}
+
+/* About Us Page */
+
+.aboutUs {
+    height: 100%;
+}
+
+.aboutUsDiv {
+    margin-top: 158px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+}
+
+.aboutUsImage {
+    background-image: url(./images/aboutUsBackground-min.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: auto;
+}
+
+#aboutUsHeader {
+    padding: 50px 0px 20px 0px;
+}
+
+.aboutUsSummary {
+    width: 50%;
+    text-align: center;
+    line-height: 32px;
+    background-color: #FBCC0A;
+}
+
+.aboutUsSummary p {
+    padding: 20px 50px;
+}
+
+/* services Page */
+
+.services {
+    background-image: url("./images/butterflyBackground-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 158px;
+    text-align: center;
+}
+
+.servicesDiv {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.serviceContainers {
+    width: 30%;
+    margin-bottom: 10%;
+    background-color: whitesmoke;
+    height: 375px;
+    opacity: .7;
+    border-radius: 40px;
+    overflow: scroll;
+}
+
+.servicesTop {
+    margin-right: 15%;
+}
+
+.servicesBottom {
+    margin-left: 15%;
+    position: relative;
+    left: 8%;
+}
+
+
+.serviceContainers p, h2 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Contact Page */
+
+.contact {
+    margin-top: 158px;
+    padding-top: 100px;
+    height: 100%;
+    text-align: center;
+    background-image: url("./images/contactBackground-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.contactDiv {
+    background-color: whitesmoke;
+    opacity: .9;
+    border-radius: 40px;
+    width: 300px;
+    margin: 200px auto 0px auto;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#contactHeader {
+    padding: 50px 0px 20px 0px;
+}
+
+.donationPhrase {
+    padding: 0 25px;
+}
+
+.pagesHeader {
+    padding: 100px 0px 80px 0px;
+    font-size: 40px;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Notable', sans-serif; */
+}
+
+@media screen and (max-width: 600px) {
+
+    .modal-content {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        width: 90%;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+        animation-name: modalopen;
+        animation-duration: 1s;
+    }
+
+    .modal {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 150px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-header {
+        background-image: url(./images/donationPopUp-min.jpg);
+        padding: 15px;
+        color: #fff;
+        height: 125px;
+        background-size: 100% 100%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .homePage h1 {
+        padding-top: 20%;
+        font-size: 35px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .headerDiv {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dropDownIcon {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .dropDownMenu:hover {
+        cursor: pointer;
+    }
+
+    .menuBackground {
+        background-color: lightgray;
+    }
+
+    .dropDownMenu {
+        padding: 5px;
+        margin-right: 60px;
+        position: relative;
+        bottom: 105px;
+        float: right;
+    }
+
+    .dropDownContent {
+        background: white;
+        width: 100%;
+        position: relative;
+        left: -15px;
+        top: -5px;
+        border-top: black solid 1px;
+    }
+
+    .dropDownLinks {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        border-bottom: black solid 1px;
+        font-family: 'Prata', serif;
+    }
+
+    #aboutUsHeader {
+        padding: 50px 0px 20px 0px;
+        margin-top: 0;
+    }
+
+    .aboutUsSummary {
+        text-align: center;
+        line-height: 32px;
+        background-color: #FBCC0A;
+        width: 100%;
+    }
+
+    .aboutUsDiv {
+        margin-top: 158px;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .aboutUsImage {
+        background-image: url(./images/aboutUsBackground-min.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 500px;
+        width: 100%;
+    }
+
+    .pagesHeader {
+        padding: 50px 0px 20px 0px;
+        /* font-family: 'Abril Fatface', cursive; */
+        /* font-family: 'Notable', sans-serif; */
+    }
+
+    .servicesDiv {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .serviceContainers {
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: whitesmoke;
+        height: 375px;
+        opacity: .7;
+        border-radius: 40px;
+    }
+
+    .servicesTop {
+        margin-right: 0;
+    }
+    
+    .servicesBottom {
+        margin-left: 0;
+        position: static;
+    }
+
+    .services {
+        padding: 10px;
+        background-image: url(./images/butterflyBackground-min.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 158px;
+        text-align: center;
+    }
+
+    .contactDiv {
+        background-color: whitesmoke;
+        opacity: .9;
+        border-radius: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+} 
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .modal-content {
+        background-color: #f4f4f4;
+        margin: 30% auto;
+        width: 40%;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+        animation-name: modalopen;
+        animation-duration: 1s;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .modal-body {
+        padding: 10px 20px;
+        height: 100px;
+        overflow: scroll;
+    }
+
+}
