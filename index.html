@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
         <title>Jefferson Outreach</title>
         <meta charset="utf-8">
@@ -10,18 +10,17 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src='./main.js'></script>
 </head>
-
+ 
 <body>
-
+ 
     <nav role="navigation">
         <ul class="navList">
-            <li><h1 id="upperLogo" class="logo notranslate">JO</h1></li>
-            <li><p id="underLogo" class="logo notranslate">Jefferson Outreach</p></li>
-            <li><div class="links" id="google_translate_element"></div></li>
-            <li><a id="contactNav" class="links" href="#">Contact</a></li>
-            <li><a id="servicesNav" class="links" href="#">Services</a></li>
-            <li><a id="aboutUsNav" class="links" href="#">About Us</a></li>
-            <li><a id="homeNav" class="links" href="#">Home</a></li>
+             <li style="float: left; top: 12px;"><img id="logo" src="./images/jeffersonoutreachlogo.jpg"></li>
+            <li style="top: 45px;"><div class="links" id="google_translate_element"></div></li>
+            <li style="top: 45px;"><a id="contactNav" class="links" href="#">Contact</a></li>
+            <li style="top: 45px;"><a id="servicesNav" class="links" href="#">Services</a></li>
+            <li style="top: 45px;"><a id="aboutUsNav" class="links" href="#">About Us</a></li>
+            <li style="top: 45px;"><a id="homeNav" class="links" href="#">Home</a></li>
             <li class="dropDownMenu"><div class="dropDownIcon"></div>
                 <div class="dropDownIcon"></div>
                 <div class="dropDownIcon"></div>
@@ -37,13 +36,13 @@
                   new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                 }
             </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>           
-        </ul> 
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>          
+        </ul>
     </nav>
-
+ 
     <main role="main" class="homePage">
         <div class="headerDiv">
-            <h1 aria-label="Helping seniors remain independent since 1984" 
+            <h1 aria-label="Helping seniors remain independent since 1984"
             class="homePageHeader hidden">Helping Seniors Remain Independent Since 1984</h1>
         </div>
         <div id="simpleModal" class="modal">
@@ -60,72 +59,96 @@
                         <input type="hidden" name="hosted_button_id" value="WV9LNJ9RV2A24">
                         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>       
+                    </form>      
                 </div>
             </div>
         </div>
     </main>
-    
+   
     <main role="main" class="aboutUs hidden">
         <div class="aboutUsDiv">
             <div class="aboutUsImage"></div>
             <div class="aboutUsSummary">
                 <h1 aria-label="About Us" id="aboutUsHeader" class="pagesHeader">About Us</h1>
-                <p> Now in existence for over 34 years, Jefferson Outreach continues to strive to expand its programs and offerings to our senior population, their loved ones and caregivers.</p> 
+                <p> Now in existence for over 34 years, Jefferson Outreach continues to strive to expand its programs and offerings to our senior population, their loved ones and caregivers.</p>
                 <p>We are a local 501-C3 non-profit organization, who's mission is to help seniors maintain healthy, secure and independent lifestyles.</p>
-                <p>By using a person-centered approach, we are able to help individuals feel free from threat, both physically and psychologically. This technique empowers and conveys unconditional positive regard for our clients.</p>
-                <p>We are committed to providing free personalized supportive services that help enhance the quality of life of the elderly throughout San Antonio, Texas.</p>                              
+                <p>Aging is not a “lost youth” but a new stage of opportunity and strength
+                    -   Betty Friedan.
+                    </p>
+                <p>By using a person-centered approach, we are able to ensure our clients are at the center of decision which relate to their life. This technique empowers and conveys unconditional positive regard for our clients.</p>
+                <p>We are committed to providing No Cost personalized supportive services that help enhance the quality of life of the elderly throughout San Antonio, Texas.</p>                             
             </div>
         </div>
     </main>
-
+ 
     <main role="main" class="services hidden">
         <h1 aria-label="Services" class="pagesHeader">Services</h1>
         <div class="servicesDiv">
             <div class="serviceContainers servicesTop">
                 <h2>Referrals and Resources</h2>
+                <img style="width: 90%; padding-top: 20px;" src="./images/referrals.jpg">
                 <p>If you are looking for additional informaiton on ways to optimize your quality of life or that of a loved one, please call us.</p>
                 <p>We can be of assistance with the following:  Senior Living Options, Caregiver support groups, Home health agencies, Hospice companies, Rehabilitation centers, Senior community centers in your area, Elder law attorneys, Continued education classes, Counseling Services, and much more.</p>
             </div>
             <div class="serviceContainers servicesTop">
                 <h2>Transportation</h2>
-                <p>We provide free personalized transportation to Seniors over the age of 60 residing in the San Antonio area.</p> 
+                <img style="width: 90%; padding-top: 20px;" src="./images/transportation.jpg">
+                <p>We provide free personalized transportation to Seniors over the age of 60 residing in the San Antonio area.</p>
                 <p>Don't miss an appointment!</p>
                 <p>Let us help you increase civic and social participation and afford you access to community and health services.</p>
-            </div>  
-            <div class="serviceContainers servicesBottom">
-                <h2>Telephone Reassurance</h2>
-                <p>This program is designed to help homebound or disabled individuals remain independent in their homes by providing reassuring telephone calls, social support and safety checks.</p> 
-                <p>We hope to reduce isolation and help program participants feel safe and more connected.</p>
             </div> 
+            <div class="serviceContainers servicesTop">
+                <h2>Telephone Reassurance</h2>
+                <img style="width: 90%; padding-top: 20px;" src="./images/telephone.jpg">
+                <p>This program is designed to help homebound or disabled individuals remain independent in their homes by providing reassuring telephone calls, social support and safety checks.</p>
+                <p>We hope to reduce isolation and help program participants feel safe and more connected.</p>
+            </div>
             <div class="serviceContainers servicesBottom">
-                <h2>Volunteer to Drive</h2>
-                <p>Our volunteers are the heart of our organization.</p>  
+                <h2>Volunteer Opportunities</h2>
+                <img style="width: 90%; padding-top: 20px;" src="./images/volunteer.jpg">
+                <p>Our volunteers are the heart of our organization.</p> 
                 <p>We rely heavily on the support of community minded individuals like you.</p>
-                <p>We are currently seeking Volunteer drivers to assist Seniors to and from medical appointments, the grocery store and social events.</p>  
+                <p>We are currently seeking Volunteer drivers to assist Seniors to and from medical appointments, the grocery store and social events.</p> 
                 <p>Sign up to take a ride, and help Seniors remain happy, healthy and engaged.</p>
-            </div>             
+            </div>    
+             <div class="serviceContainers servicesBottom">
+                <h2>Special Events</h2>
+                <img style="width: 90%; padding-top: 20px;" src="./images/specialevents.jpg">
+                <p>This program helps seniors stay socially connected and engaged in their community by providing socialization opportunities through monthly gatherings, including specialized events for people living with dementia, and their family caregivers.</p> 
+            </div>  
         </div>
     </main>
-
+ 
     <main role="main" class="contact hidden">
         <div class="contactDiv">
-            <h1 aria-label="Contact" id="contactHeader" class="pagesHeader">Contact Us!</h1>
-            <p> (210) 734-5016</p>
-            <p>2201 St. Cloud</p>
-            <p>San Antonio, TX 78228</p>
-            <p class="donationPhrase">All services are free, however donations are encouraged.</p>
+            <h1 aria-label="Contact" id="contactHeader" style="padding: 0px; margin-top: 0px;" class="pagesHeader">YOUR DONATIONS MAKE A DIFFERENCE</h1>
+            <p> Jefferson Outreach is supported entirely by partnership, donations from individuals, local business, Churches, foundations and grants. With over 5,000 clients served and the expected growth of seniors needing transportation, we invite you to support or efforts and make a meaningful donation. Donations can be sent to our office at 2201 St. Cloud San Antonio, TX 78228 or a donation envelope can be requested when you schedule a ride.   
+            </p>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="WV9LNJ9RV2A24">
                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form> 
+            </form>
+        </div>
+         <div class="contactDiv" id="contactUsDiv">
+            <h1 aria-label="Contact" id="contactHeader" style="padding-top: 80px" class="pagesHeader">Contact Us!</h1>
+            <p> (210) 734-5016</p>
+            <p>2201 St. Cloud</p>
+            <p>San Antonio, TX 78228</p>
             <p>Visit our Facebook Page</p>
             <a href="https://www.facebook.com/thenewjo" target="_blank"><img src="./images/facebookIcon.png"></a>
         </div>
+        <div class="contactDiv" id="contactImageDiv">
+            <img style="width: 90%;" src="./images/contactusblock.jpg">
+            <p>La forma que hacen el trabajo me toca el Corazon, con el carino, buen semblante y alegria. -Ms. Rosa Delgado, Cliente desde 2014</p>
+            <p>The way they do the work touches my Heart, with the affection, good spirit and joy. -Ms. Rosa Delgado, Client since 2014</p>
+        </div>
+      
     </main>
-
+ 
 </body>
-
+ 
 </html>
+ 
+ 

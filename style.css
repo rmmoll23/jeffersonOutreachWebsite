@@ -1,81 +1,85 @@
 html {
     height: 100%;
 }
-
+ 
 body {
     margin: 0;
     /* font-family: 'Prata', serif; */
-    top: 0px !important; 
+    top: 0px !important;
     height: 100%;
+    font-family: 'adobe-garamond-pro', serif;
+    font-style: normal;
+    font-weight: 700;
 }
-
+ 
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
-    } 
-
+    }
+ 
 .hidden {
     display: none;
 }
-
+ 
 a {
     text-decoration: none;
     color: black;
 }
-
+ 
 a:hover {
     color: #FBCC0A;
 }
 /* Logo */
-
-.logo {
-    text-align: left;
-    display: block;
+ 
+#logo {
+    width: 180px;
     margin-left: 40px;
+    position: absolute;
+    top: -20px;
 }
-
-#upperLogo {
+ 
+/* #upperLogo { */
     /* font-family: 'Great Vibes', cursive; */
-    font-family: 'Parisienne', cursive;
+    /* font-family: 'Parisienne', cursive; */
     /* font-family: 'Cookie', cursive; */
     /* font-family: 'Dancing Script', cursive; */
-    width: fit-content;
+    /* width: fit-content;
     width: -moz-fit-content;
     background-color: #FBCC0A;
     padding: 20px;
     border-radius: 50%;
     font-size: 45px;
-}
-
-#underLogo {
+} */
+ 
+/* #underLogo { */
     /* font-family: 'Bitter', serif; */
     /* font-family: 'Libre Baskerville', serif; */
     /* font-family: 'Martel', serif; */
     /* font-family: 'Rufina', serif; */
     /* font-family: 'Playball', cursive; */
-    font-family: 'Prata', serif;
-    font-size: 18px;
+    /* font-family: 'Prata', serif; */
+    /* font-size: 18px;
     margin-top: 0px
-}
-
+} */
+ 
 /* Nav Bar */
-
-.navList h1 {
+ 
+/* .navList h1 {
     margin: 0 0 0 75px;
-}
-
-.links {
+} */
+ 
+/*.links {
     padding: 5px 25px;
     position: relative;
     bottom: 90px;
-    float: right;
+     float: right;
     border-right:solid 1px black;
-    font-family: 'Prata', serif;
-}
-
+     font-family: 'Prata', serif;
+}*/
+ 
 #contactNav {
     border: none;
 }
-
+ 
 .navList {
     list-style-type: none;
     border-bottom: black solid;
@@ -88,17 +92,24 @@ a:hover {
     margin: 0;
     height: 125px;
 }
-
+ 
 .navList li {
-    display: inline;
+    float: right;
+    position: relative;
 }
-
+.navList li a {
+    font-size: 20px;
+    display: block;
+    padding: 5px 25px;
+    border-right:solid 1px black;
+}
+ 
 #contactNav {
-    margin-right: 30px;    
+    margin-right: 30px;   
 }
-
+ 
 /* Home Page */
-
+ 
 .homePage {
     background-image: url("./images/homePageBackground1-min.jpg");
     background-repeat: no-repeat;
@@ -107,20 +118,20 @@ a:hover {
     background-size: 100% 100%;
     text-align: center;
 }
-
+ 
 .headerDiv {
     width: 50%;
 }
-
+ 
 .homePage h1 {
     padding-top: 20%;
     font-size: 50px;
     width: 60%;
     margin: 0 auto;
 }
-
+ 
 /* Pop-Up */
-
+ 
 .modal {
   position: fixed;
   z-index:1;
@@ -131,97 +142,98 @@ a:hover {
   overflow: hidden;
   background-color: rgba(0,0,0,0.5);
 }
-
+ 
 .modal-content {
   background-color:#f4f4f4;
   margin: 15% auto;
   width: 40%;
+  max-width: 500px;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
   animation-name:modalopen;
   animation-duration:1s;
 }
-
+ 
 .modal-header h2, .modal-footer h3 {
   margin:0;
 }
-
+ 
 .modal-header {
-  background-image: url("./images/donationPopUp-min.jpg");
+  background-image: url(./images/homepagepopup2-min.jpg);
   padding:15px;
   color:#fff;
   height: 225px;
   background-size: 100% 100%;
 }
-
+ 
 .modal-body {
   padding:10px 20px;
   height: 150px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
-
+ 
 .modal-footer {
   background:#FBCC0A;
   padding:10px;
   color:#fff;
   text-align: center;
 }
-
+ 
 .closeBtn {
-  color:black;
+  color:white;
   float: right;
   font-size:30px;
 }
-
+ 
 .closeBtn:hover,.closeBtn:focus {
   color:#FBCC0A;
   text-decoration: none;
   cursor:pointer;
 }
-
+ 
 @keyframes modalopen {
   from{ opacity: 0}
   to {opacity: 1}
 }
-
+ 
 /* About Us Page */
-
+ 
 .aboutUs {
     height: 100%;
 }
-
+ 
 .aboutUsDiv {
     margin-top: 158px;
     width: 100%;
     display: flex;
     flex-flow: row;
-    height: 100%;
+    height: auto;
 }
-
+ 
 .aboutUsImage {
-    background-image: url(./images/aboutUsBackground-min.jpg);
+    background-image: url(./images/aboutUs.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 50%;
     height: auto;
 }
-
+ 
 #aboutUsHeader {
     padding: 50px 0px 20px 0px;
 }
-
+ 
 .aboutUsSummary {
     width: 50%;
     text-align: center;
     line-height: 32px;
     background-color: #FBCC0A;
 }
-
+ 
 .aboutUsSummary p {
     padding: 20px 50px;
 }
-
+ 
 /* services Page */
-
+ 
 .services {
     background-image: url("./images/butterflyBackground-min.jpeg");
     background-repeat: no-repeat;
@@ -229,71 +241,74 @@ a:hover {
     margin-top: 158px;
     text-align: center;
 }
-
+ 
 .servicesDiv {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
 }
-
+ 
 .serviceContainers {
-    width: 30%;
+    width: 28%;
     margin-bottom: 10%;
     background-color: whitesmoke;
-    height: 375px;
+    /*height: 375px;*/
     opacity: .7;
     border-radius: 40px;
-    overflow: scroll;
+    padding-bottom: 20px;
 }
-
+ 
 .servicesTop {
-    margin-right: 15%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    height: auto;
 }
-
+ 
 .servicesBottom {
-    margin-left: 15%;
+    margin-left: 5%;
     position: relative;
-    left: 8%;
+    left: 12%;
+    height: auto;
 }
-
-
+ 
 .serviceContainers p, h2 {
     padding: 10px 20px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
+ 
 /* Contact Page */
-
+ 
 .contact {
-    margin-top: 158px;
     padding-top: 100px;
-    height: 100%;
+    height: auto;
     text-align: center;
-    background-image: url("./images/contactBackground-min.jpeg");
+    background-image: url("./images/contactusBackground.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
 }
-
+ 
 .contactDiv {
-    background-color: whitesmoke;
-    opacity: .9;
+    display: inline-block;
     border-radius: 40px;
     width: 300px;
-    margin: 200px auto 0px auto;
-    padding-bottom: 10px;
+    margin: 165px 5% 0px 5%;
+    padding: 10px;
     font-weight: bold;
+    height: 65%;
+    overflow: hidden;
+    vertical-align: text-top;
 }
-
+ 
 #contactHeader {
     padding: 50px 0px 20px 0px;
 }
-
+ 
 .donationPhrase {
     padding: 0 25px;
 }
-
+ 
 .pagesHeader {
     padding: 100px 0px 80px 0px;
     font-size: 40px;
@@ -301,17 +316,22 @@ a:hover {
     /* font-family: 'Notable', sans-serif; */
 }
 
+#contactImageDiv {
+    overflow: visible !important;
+}
+ 
 @media screen and (max-width: 600px) {
-
+ 
     .modal-content {
         background-color: #f4f4f4;
         margin: 20% auto;
         width: 90%;
+        max-width: 400px;
         box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
         animation-name: modalopen;
         animation-duration: 1s;
     }
-
+ 
     .modal {
         position: fixed;
         z-index: 1;
@@ -322,127 +342,131 @@ a:hover {
         overflow: hidden;
         background-color: rgba(0,0,0,0.5);
     }
-
+ 
     .modal-header {
-        background-image: url(./images/donationPopUp-min.jpg);
+        background-image: url(./images/homepagepopup2-min.jpg);
         padding: 15px;
         color: #fff;
         height: 125px;
         background-size: 100% 100%;
     }
-
+ 
     .links {
-        display: none;
+        display: none !important;
     }
-
+ 
     .homePage h1 {
         padding-top: 20%;
         font-size: 35px;
         width: 60%;
         margin: 0 auto;
     }
-
+ 
     .headerDiv {
         width: 90%;
         margin: 0 auto;
     }
-
+ 
     .dropDownIcon {
         width: 35px;
         height: 5px;
         background-color: black;
         margin: 6px 0;
     }
-
+ 
     .dropDownMenu:hover {
         cursor: pointer;
     }
-
+ 
     .menuBackground {
         background-color: lightgray;
     }
-
+ 
     .dropDownMenu {
         padding: 5px;
         margin-right: 60px;
         position: relative;
-        bottom: 105px;
+        top: 68px;
         float: right;
     }
-
+ 
     .dropDownContent {
         background: white;
-        width: 100%;
+        width: 110%;
         position: relative;
         left: -15px;
-        top: -5px;
-        border-top: black solid 1px;
+        top: 92px;
     }
-
+   
+    .dropDownContent li {
+        width: 100%;
+        background: white;
+    }
+ 
     .dropDownLinks {
         display: block;
         padding: 10px;
         font-size: 20px;
         border-bottom: black solid 1px;
-        font-family: 'Prata', serif;
+        /* font-family: 'Prata', serif; */
     }
-
+ 
     #aboutUsHeader {
         padding: 50px 0px 20px 0px;
         margin-top: 0;
     }
-
+ 
     .aboutUsSummary {
         text-align: center;
         line-height: 32px;
         background-color: #FBCC0A;
         width: 100%;
     }
-
+ 
     .aboutUsDiv {
         margin-top: 158px;
         width: 100%;
         height: 100%;
         display: block;
     }
-
+ 
     .aboutUsImage {
-        background-image: url(./images/aboutUsBackground-min.jpg);
+        background-image: url(./images/aboutuspage.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 500px;
         width: 100%;
     }
-
+ 
     .pagesHeader {
         padding: 50px 0px 20px 0px;
         /* font-family: 'Abril Fatface', cursive; */
         /* font-family: 'Notable', sans-serif; */
     }
-
+ 
     .servicesDiv {
         width: 90%;
         margin: 0 auto;
     }
-
+ 
     .serviceContainers {
         width: 100%;
         margin-bottom: 30px;
         background-color: whitesmoke;
-        height: 375px;
+        height: auto;
         opacity: .7;
         border-radius: 40px;
     }
-
+ 
     .servicesTop {
         margin-right: 0;
     }
-    
+   
     .servicesBottom {
         margin-left: 0;
         position: static;
     }
-
+ 
     .services {
         padding: 10px;
         background-image: url(./images/butterflyBackground-min.jpeg);
@@ -451,17 +475,65 @@ a:hover {
         margin-top: 158px;
         text-align: center;
     }
-
+ 
     .contactDiv {
         background-color: whitesmoke;
         opacity: .9;
         border-radius: 40px;
         width: 80%;
         margin: 0 auto;
+        height: auto;
+        margin-bottom: 20px;
     }
-} 
-
-
+   
+    #contactUsDiv h1{
+        padding-top: 0px !important;
+    }
+   
+    .contact {
+        margin-top: 150px;
+        height: auto;
+        background-size: cover;
+    }
+   
+    #logo {
+        margin-left: 10px;
+    }
+}
+ 
+@media screen and (min-width: 601px) and (max-width: 800px) {
+ 
+    .contactDiv {
+        display: inline-block;
+        border-radius: 40px;
+        width: 228px;
+        margin: 165px 0 0px 0;
+        padding: 10px;
+        font-weight: bold;
+        height: 65%;
+        overflow: hidden;
+    }
+   
+    .contactDiv h1 {
+        font-size: 30px;
+    }
+   
+    .serviceContainers {
+        width: 45%;
+        margin-bottom: 10%;
+        background-color: whitesmoke;
+        opacity: .7;
+        border-radius: 40px;
+       padding-bottom: 20px;
+    }
+   
+    .servicesBottom {
+        margin-left: 2.5%;
+        position: relative;
+        height: auto;
+    }
+}
+ 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .modal-content {
         background-color: #f4f4f4;
@@ -471,13 +543,51 @@ a:hover {
         animation-name: modalopen;
         animation-duration: 1s;
     }
-}
 
+    .contactDiv {
+        display: inline-block;
+        border-radius: 40px;
+        width: 30%;
+        margin: 165px 0 0px 0;
+        padding: 10px;
+        font-weight: bold;
+        height: 65%;
+        overflow: hidden;
+    }
+}
+ 
 @media screen and (max-width: 320px) {
     .modal-body {
         padding: 10px 20px;
         height: 100px;
         overflow: scroll;
     }
+ 
+}
+ 
+@media screen and (min-width: 801px) and (max-width: 1400px), screen and (max-height: 800px) {
+    .contactDiv {
+        display: inline-block;
+        border-radius: 40px;
+        width: 228px;
+        margin: 100px 2.5% 0px 2.5%;
+        padding: 10px;
+       font-weight: bold;
+        height: 65%;
+        overflow: hidden;
+        vertical-align: text-top;
 
+    }
+   
+    #contactUsDiv h1{
+        padding-top: 40px !important;
+    }
+   
+    #contactImageDiv {
+        overflow: visible !important;
+    }
+   
+    .contactDiv h1 {
+        font-size: 30px;
+    }
 }
