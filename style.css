@@ -36,6 +36,11 @@ a:hover {
     position: absolute;
     top: -20px;
 }
+
+#google_translate_element a {
+    font-size: 17px;
+}
+
  
 /* #upperLogo { */
     /* font-family: 'Great Vibes', cursive; */
