@@ -207,6 +207,7 @@ a:hover {
     display: flex;
     flex-flow: row;
     height: auto;
+    height: -webkit-fill-available;
 }
  
 .aboutUsImage {
