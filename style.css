@@ -99,7 +99,7 @@ a:hover {
 }
 .navList li a {
     font-size: 20px;
-    display: block;
+    display: inline-block;
     padding: 5px 25px;
     border-right:solid 1px black;
 }
